@@ -30,38 +30,37 @@ const MusicPlayerByUseEffect = () => {
 
   return (
     <div>
-    <div style={{ width: "500px", textAlign: "center", margin: "40px auto" }}>
-      <h1>🎶 Music Player</h1>
+      <div style={{ width: "500px", textAlign: "center", margin: "40px auto" }}>
+        <h1>🎶 Music Player</h1>
 
-      <div
-        style={{
-          backgroundColor: "#BFC6C4",
-          width: "100%",
-          height: "20px",
-          borderRadius: "10px",
-          overflow: "hidden",
-          marginBottom: "20px",
-        }}
-      >
         <div
           style={{
-            width: `${progress}%`,
+            backgroundColor: "#BFC6C4",
+            width: "100%",
             height: "20px",
-            backgroundColor: "#E83C91",
-            transition: "width 0.3s",
+            borderRadius: "10px",
+            overflow: "hidden",
+            marginBottom: "20px",
           }}
-        ></div>
+        >
+          <div
+            style={{
+              width: `${progress}%`,
+              height: "20px",
+              backgroundColor: "#E83C91",
+              transition: "width 0.3s",
+            }}
+          ></div>
+        </div>
+        <p>{progress}%</p>
+        <div style={{ display: "flex", gap: "10px", justifyContent: "center" }}>
+          <button onClick={handlePlay}> ▶️ Play </button>
+          <button onClick={handlepause}> ⏸️ Pause </button>
+          <button onClick={handleRestart}> 🔁 Restart </button>
+        </div>
       </div>
-      <p>{progress}%</p>
-      <div style={{ display: "flex", gap: "10px", justifyContent: "center" }}>
-        <button onClick={handlePlay}> ▶️ Play </button>
-        <button onClick={handlepause}> ⏸️ Pause </button>
-        <button onClick={handleRestart}> 🔁 Restart </button>
-      </div>
-  </div>
-  <hr />
-  </div>
-    
+      <hr />
+    </div>
   );
 };
 
