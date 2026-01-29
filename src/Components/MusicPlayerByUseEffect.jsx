@@ -29,6 +29,7 @@ const MusicPlayerByUseEffect = () => {
   };
 
   return (
+    <div>
     <div style={{ width: "500px", textAlign: "center", margin: "40px auto" }}>
       <h1>🎶 Music Player</h1>
 
@@ -57,7 +58,10 @@ const MusicPlayerByUseEffect = () => {
         <button onClick={handlepause}> ⏸️ Pause </button>
         <button onClick={handleRestart}> 🔁 Restart </button>
       </div>
-    </div>
+  </div>
+  <hr />
+  </div>
+    
   );
 };
 
