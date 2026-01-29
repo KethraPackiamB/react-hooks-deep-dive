@@ -4,7 +4,7 @@ const TreeStageChangesByUseState = () => {
   const [season, setSeason] = useState(null);
 
   const seasonSummary =  season === "Summer" ? "☀️ Summer: The tree is full of life with lush green leaves."
-   : season === "Winter" ? "❄️ Winter: The tree is dormant and conserving energy."
+   : season === "Winter" ? "☃️ Winter: The tree is dormant and conserving energy."
    : season === "Autumn" ? "🍂 Autumn: Leaves fall as the tree prepares for rest." 
    : season === "Rain" ? "🌧️ Rainy Season: Rain nourishes the tree and boosts growth."
    : "🌳 A tree stands quietly, growing stronger through every season."
