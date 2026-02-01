@@ -13,7 +13,7 @@ const SettingPanel = () => {
       <div
         style={{
           width: "200px",
-          margin: "40px auto",
+          margin: "30px auto",
           textAlign: "center",
           border: "1px solid #000",
           padding: "20px 0",

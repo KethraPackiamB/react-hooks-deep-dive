@@ -13,12 +13,12 @@ const UserApp = () => {
         color: settings.themeColor,
         borderRadius: "10px",
         margin: "30px auto",
-        width: "500px",
+        width: "600px",
       }}
     >
       <h1>📝 User Panel</h1>
       <p>
-        Hi User, here you can change the theme of this app as your convinent.
+        Hi User, here you can change the theme of this app as you want.
       </p>
     </div>
   );
