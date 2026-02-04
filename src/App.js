@@ -6,6 +6,7 @@ import SettingPanel from './Components/AppPanelSettingByContextAPI/SettingPanel'
 import { SettingContextProvider } from './Components/AppPanelSettingByContextAPI/SettingContext';
 import UserApp from './Components/AppPanelSettingByContextAPI/UserApp';
 import ShoppingCartbyUseReducer from './Components/ShoppingCartbyUseReducer';
+import WordsCounterByUseRef from './Components/WordsCounterByUseRef';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       <SettingPanel/>
       <UserApp/>
       </SettingContextProvider> */}
-      <ShoppingCartbyUseReducer/>
+      {/* <ShoppingCartbyUseReducer/> */}
+      <WordsCounterByUseRef/>
     </div>
   );
 }
