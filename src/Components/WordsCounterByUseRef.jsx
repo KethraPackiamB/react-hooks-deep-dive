@@ -1,10 +1,15 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 
 const WordsCounterByUseRef = () => {
   const wordCountRef = useRef(0);
   const counterDisplayRef = useRef(null);
   const textAreaRef = useRef(null);
   const [status, setStatus] = useState(null);
+ 
+
+  useEffect(()=> {
+      textAreaRef.current.focus();
+  },[]);
 
   const handleInput = (e) => {
     const text = e.target.value.trim();
@@ -15,7 +20,7 @@ const WordsCounterByUseRef = () => {
 
     counterDisplayRef.current.innerText = `${wordCountRef.current} words`;
 
-    if (wordCountRef.current > 4) {
+    if (wordCountRef.current > 20) {
       setStatus("⚠️ Limit Reached ...");
     } else {
       setStatus(null);

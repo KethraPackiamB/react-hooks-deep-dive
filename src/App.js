@@ -11,13 +11,13 @@ import WordsCounterByUseRef from './Components/WordsCounterByUseRef';
 function App() {
   return (
     <div>
-      {/* <TreeStageChangesByUseState/> */}
-      {/* <MusicPlayerByUseEffect/> */}
-      {/* <SettingContextProvider>
+      <TreeStageChangesByUseState/>
+      <MusicPlayerByUseEffect/>
+      <SettingContextProvider>
       <SettingPanel/>
       <UserApp/>
-      </SettingContextProvider> */}
-      {/* <ShoppingCartbyUseReducer/> */}
+      </SettingContextProvider>
+      <ShoppingCartbyUseReducer/>
       <WordsCounterByUseRef/>
     </div>
   );

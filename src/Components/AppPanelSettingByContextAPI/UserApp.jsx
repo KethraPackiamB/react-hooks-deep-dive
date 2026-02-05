@@ -5,6 +5,7 @@ const UserApp = () => {
   const { settings } = useContext(SettingContext);
 
   return (
+    <div>
     <div
       style={{
         border: `3px solid ${settings.themeColor}`,
@@ -20,6 +21,8 @@ const UserApp = () => {
       <p>
         Hi User, here you can change the theme of this app as you want.
       </p>
+    </div>
+    <hr />
     </div>
   );
 };

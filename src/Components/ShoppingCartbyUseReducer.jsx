@@ -88,6 +88,7 @@ const ShoppingCartbyUseReducer = () => {
   );
 
   return (
+    <div>
     <div style={{ width: "400px", margin: "40px auto" }}>
       <h1>🛒 Shopping Cart</h1>
       <div style={{ border: "1px solid #000", padding: "20px" }}>
@@ -95,17 +96,7 @@ const ShoppingCartbyUseReducer = () => {
           <h3>🎁 Products</h3>
 
           <table>
-            {/* <thead>
-            <th>
-               <tr>
-                <td>Products</td>
-                <td></td>
-                <td>Price</td>
-                <td></td>
-                <td>Add</td>
-               </tr>
-            </th>
-        </thead> */}
+           
             <tbody>
               {products.map((product) => (
                 <tr key={product.id}>
@@ -173,6 +164,9 @@ const ShoppingCartbyUseReducer = () => {
           </button>
         )}
       </div>
+     
+    </div>
+    <hr />
     </div>
   );
 };
